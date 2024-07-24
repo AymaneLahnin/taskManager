@@ -1,0 +1,36 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root{
+  --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  
+  background-color:rgb(255, 255, 255)
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* themes */
+.light{
+  background-color: #FFFFFF;
+  transition: all 500ms;
+}
+
+.medium{
+  background-color: #EFEFEF;
+  transition: all 500ms;
+}
+
+.dark{
+  background-color: #15202B;
+  transition: all 500ms;
+}
+
+.gOne{
+  background: linear-gradient(90deg, rgb(89, 142, 211) 0%, hsla(248, 87%, 36%, 1) 100%);
+  transition: all 500ms;
+}
