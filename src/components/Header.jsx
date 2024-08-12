@@ -1,6 +1,7 @@
 import React from "react";
 import emi from "../assets/emi.png";
 import { useEffect,useState } from "react";
+import { NavLink } from "react-router-dom";
 const Header = ({children}) => {
   const [theme, setTheme] = useState(localStorage.getItem("theme")||"light");
 
@@ -23,7 +24,7 @@ const Header = ({children}) => {
         <span onClick={()=>setTheme("dark")} className={theme==="dark" ? "dark activeTheme":"dark"}></span>
         <span onClick={()=>setTheme("gOne")} className={theme==="gOne" ? "gOne activeTheme":"gOne"}></span>
       </div>
-      
+      <div> <a href="/auth">logout</a></div>
     </header>
   );
 };
